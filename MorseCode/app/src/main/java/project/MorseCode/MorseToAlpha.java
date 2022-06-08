@@ -49,6 +49,7 @@ public class MorseToAlpha {
         dictionary.put( "----.", "9" );
         dictionary.put( "-----", "0" );
 
+        dictionary.put("/", " ");
     }
 
     public static String get(String key) {

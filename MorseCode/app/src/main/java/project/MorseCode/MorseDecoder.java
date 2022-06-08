@@ -4,7 +4,15 @@ import java.util.*;
 public class MorseDecoder {
 
     public static String decodeMorseCode( String code ) {
-        return "a";
+        String result = "";
+
+        String[] codeSplit = code.trim().toUpperCase(Locale.ROOT).split(" ");
+        for( String section : codeSplit ) {
+            result += MorseToAlpha.get(section);
+            System.out.println(codeSplit);
+        }
+
+        return result;
     }
 
     //include case to include does not match
